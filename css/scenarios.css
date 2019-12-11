@@ -1,0 +1,493 @@
+@font-face {
+    font-family: 'Myriad Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Light'), url('./fontStyles/MyriadPro-Light.woff') format('woff');
+  }
+
+  @keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+  :root{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-family: "Myriad Pro Light";
+    font-size: 85%;
+ 
+  }
+  
+  html, body {
+    overflow: hidden;
+  }
+  
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #9cdada;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 1rem;
+  }
+  
+  a:hover{
+  text-decoration: none;
+  text-shadow: 0 0rem 0.8rem #007c7c;
+  } 
+
+#sidebar {
+    min-width: 275px;
+    max-width: 275px;
+    height: 100%;
+    margin-top:-10vh;
+    background-color: rgba(0, 190, 181, 0.35);    
+    border-right: .2rem solid rgba(0, 111, 119, 0.25);
+    -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;
+}
+
+.image{
+	height: 8%;
+	padding-left: 10px;
+	
+}
+
+#sidebar .sidebar-header {
+    padding: 1.5rem;
+    padding-top: 20%;
+    margin-left: 1.35rem;
+    color: #9cdada;
+    letter-spacing: .2rem;
+    
+}
+
+h3 { 
+    font-size: 2rem;
+    text-shadow: 0 0rem 2rem #53c0c0;
+}
+
+body {
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+    background-image: url("../media/picture2.jpg");
+    background-color: #24252B;
+    font-family: 'Myriad Pro Light';
+    height: 100vh;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.modal {
+    background-color: transparent;
+}
+
+.modal-content {
+    background-color: rgba(0, 182, 173, 0.55);
+}
+
+.modal-header button {
+    background-color: transparent;
+    color: #9cdada;
+    -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;
+}
+
+.modal-header button:hover {
+    background-color: transparent;
+    color: #10fdfd;
+    text-shadow: 0 0rem 1rem #007c7c;
+}
+
+.modal-footer button {
+    background-color: transparent;
+    border: 0.17rem solid #2c716e;
+    -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;
+    border-radius: 1rem;
+}
+
+.modal-footer button:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+    color: #10fdfd;
+    border: 0.20rem solid #10dfdf;
+    text-shadow: 0 0rem 1rem #007c7c;    
+}
+
+p {
+    display: inline-block;
+    margin: 0px;
+}
+
+#main {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    margin-top: -100vh;
+    margin-left: 100px;
+    background-color: transparent;
+}
+
+#main .problem {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#header {
+    min-height: 10vh;
+    transition: all 0.3s;
+    margin-left: 250px;
+}
+
+.question {
+	height: 250px;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;
+}
+
+.expand {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #C33232;
+    background-color: transparent;
+}
+
+.helper {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    padding: .8rem;    
+    border: 0.17rem solid #2c716e;
+    border-radius: 3rem;
+    width: 4rem;
+    top: 50%;
+    right: 2.5%;
+    background: transparent;
+    font-size: 1rem;
+    color: rgb(164, 211, 207); 
+    -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;
+}
+
+.expand:hover {
+    background-color: transparent;
+}
+
+.helper:hover {
+    cursor: pointer;
+    box-shadow: 0 0rem 1.35rem #00bbb2;
+    transform: scale(1.08);
+    transition: 0.35s ease-in;
+    background-color: transparent;
+    color: #99ffff;
+    border: 0.20rem solid #10dfdf;
+    text-shadow: 0 0rem 1rem #007c7c;
+}
+
+.redo{
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    padding: .75rem;    
+    border: 0.17rem solid #2c716e;
+    border-radius: 2.5rem;
+    width: 4rem;
+    top: 85%;
+    right: 2.5%;
+    background: transparent;
+    font-size: 1.5rem;
+    color: rgb(164, 211, 207); 
+    -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;
+  }
+  
+  .redo:hover {
+    cursor: pointer;
+    box-shadow: 0 0rem 1.35rem #00bbb2;
+    transform: scale(1.08);
+    transition: 0.35s ease-in;
+    background-color: transparent;
+    color: #99ffff;
+    border: 0.20rem solid #10dfdf;
+    text-shadow: 0 0rem 1rem #007c7c;
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(65, 116, 114, 0.55);
+    border: 1.5px solid rgba(0, 111, 119, 0.25);
+}
+  
+
+.question p {
+	padding-top: 8rem;
+    display: block;
+    text-align: center;
+    margin-left: 5.5rem;
+    font-size: 2rem;
+    color: #9cdada;
+    text-shadow: 0 0rem 2.35rem #009c9c;
+    font-weight: bold;
+}
+
+.answer button {
+    display: block;
+    width: 90%;
+    text-decoration: none;
+    margin-left: 8rem;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+	margin-top: .5rem;
+    padding: 8px 12px;
+    text-align: center;
+    color: #9cdada;
+    border: 1px solid #649d38;
+    border-radius: 5px;
+    font-size: 1.25rem;
+	min-height: 5rem;
+}
+
+.answer button {
+    display: block;
+    margin-left: 8rem;
+    margin-right: auto;
+    color: #9cdada;
+    background-color: transparent;
+    border: 0.17rem solid #399691;
+    padding: 16px 20px;
+    border-radius: 2rem;
+	-webkit-transition: all .4s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.answer button:hover {
+    border-color: #10dfdf;
+    color: #9cdada;
+    background-color: #649d38;	
+    color: #9cdada;
+    border: 0.20rem solid #10dfdf;
+    text-shadow: 0 0rem 0.8rem #015f5f;  
+	box-shadow: 0 0rem 1rem #007c7c;
+	transform: scale(1.03);
+}
+
+.money {
+    height: 8%;
+    width: 28%;
+    margin-left: 8%;
+}
+
+
+.stats-text {
+    margin-left: 8%;
+    color: #9cdada;
+    text-shadow: 0 0rem 1.8rem #009c9c;
+    vertical-align: middle;
+    font-size: 2rem;
+}
+
+.food {
+    height: 8%;
+    width: 28%;
+    margin-left: 8%;
+}
+
+.stress {
+    height: 8%;
+    width: 28%;
+    margin-left: 8%;
+}
+
+.footer {
+    width: 100%;
+    margin-top: -20vh;
+    padding-right: 35px;
+}
+
+.formToSub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.buttonId{
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(239, 189, 50, 255);
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.expand {
+    display: none;
+}
+
+/* ---------------------------------------------------
+MEDIAQUERIES
+REFERENCE: https://bootstrapious.com/p/bootstrap-sidebar
+----------------------------------------------------- */
+@media (max-width: 1366px) {
+.answer button {
+    margin-left: 5rem;
+}
+
+@media (min-width: 768px) {
+    .expand {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        visibility: hidden;
+    }
+    .expand {
+        visibility:visible;
+    }
+
+    #header {
+        padding: 20px;
+        min-height: 10vh;
+        transition: all 0.3s;
+        margin-left: 0px;
+    }
+
+    .question {
+        height: 250px;
+        margin-bottom: 4rem;
+        font-size: 7rem;
+    }
+
+    .question p {
+	    padding-top: 7rem;
+        display: block;
+        text-align: center;
+        margin-left: .3rem;
+        font-weight: bold;
+        color: #9cdada;
+        text-shadow: 0 0rem 2.35rem #009c9c;
+    }
+
+    #main {
+        margin-left: 0px;
+        padding: 2vw;
+    }
+
+    #main .problem {
+        margin-left: 0px;
+        padding: 1vw;
+        margin-right: 0px;
+    }
+
+    #main p {
+        font-size: 1.5rem;
+        text-shadow: 0 0rem 2.35rem #009c9c;
+    }
+
+    #main a {
+        font-size: 1.5rem;
+        text-shadow: 0 0rem 2.35rem #009c9c;
+    }
+
+    .answer button {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .5rem;
+        margin-top: 1.5rem;
+        padding: 8px 12px;
+        text-align: center;
+        color: #9cdada;
+        border-radius: 5px;
+        font-size: 1rem;
+        min-height: 1rem;
+    }
+    
+    .answer button {
+        color: #9cdada;
+        background-color: transparent;
+        border: 0.17rem solid #399691;
+        padding: 16px 20px;
+        border-radius: 2rem;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+    
+    .answer button:hover {
+        border-color: #10dfdf;
+        color: #9cdada;
+        background-color: #649d38;	
+        color: #9cdada;
+        border: 0.20rem solid #10dfdf;
+        text-shadow: 0 0rem 0.8rem #015f5f;  
+        box-shadow: 0 0rem 1rem #007c7c;
+        transform: scale(1.03);
+    }
+
+    .modal-body img {
+        height: 90px;
+        width: 100px;
+    }
+
+    .modal-content hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: rgba(0, 49, 48, 0.55);
+        border: 1.5px solid rgba(0, 111, 119, 0.25);
+    }
+
+    .expand {
+            display: inline-block;
+            position: absolute;
+            text-decoration: none;
+            padding: .75rem;    
+            border: 0.17rem solid #2c716e;
+            border-radius: 2.5rem;
+            width: 4rem;
+            top: 85%;
+            left: 43.5%;
+            background: transparent;
+            font-size: 1.5rem;
+            color: rgb(164, 211, 207); 
+            -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;
+          }
+
+          .expand image {
+              width: 100%;
+              height: 100%;
+          }
+
+          .expand:hover {
+            cursor: pointer;
+            box-shadow: 0 0rem 1.35rem #00bbb2;
+            transform: scale(1.08);
+            transition: 0.35s ease-in;
+            background-color: transparent;
+            color: #99ffff;
+            border: 0.20rem solid #10dfdf;
+            text-shadow: 0 0rem 1rem #007c7c;
+          }
+    }
+}

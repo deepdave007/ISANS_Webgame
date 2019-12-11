@@ -1,0 +1,79 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: "Courier New", Courier, monospace;
+}
+
+button{
+	margin-left: 160px;
+}
+
+table{
+	border-collapse: collapse;
+	height:100px;
+	display:block;
+	font-size: 11px;
+	font-weight: bold;
+	display:block;
+	max-width: 150px;
+}
+td, th {
+	padding: 5px;
+	word-wrap:break-word;
+	border: 1px solid grey;
+	text-align: left;
+	padding: 5px;
+}
+
+tr:nth-child(even) {
+	background-color: grey;
+}
+
+#wrapper{
+	display:flex;
+	margin-left: 100px;
+}
+
+.mediumTextArea{
+	width:167px;height:100px;
+}
+
+.largeTextArea{
+	width:300px;
+	height:100px;
+}
+
+.extraLargeTextArea{
+	width:500px;
+	height:100px;
+}
+
+.setHeight{
+	height:100px;
+}
+
+.title{
+	vertical-align:top;
+}
+
+.number-title{
+	margin-right: 61px;
+}
+
+.story{
+	margin: 10px;
+}
+
+.numberInput{
+	width: 69px;
+}
+
+.tableNumberCol{
+	max-width: 60px;
+	min-width: 60px;
+}
+
+.tableDescCol{
+	max-width: 130px;
+	min-width: 130px;
+}

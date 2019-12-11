@@ -1,0 +1,30 @@
+create table stories(
+	story_id int not null,
+	title text,
+	starting_finance int not null,
+	starting_mental int not null,
+	starting_hunger int not null,
+	active bit not null,
+	icon text,
+	primary key(story_id)
+);
+
+create table questions(
+	question_id int not null,
+	story_id int not null,
+	question text not null,
+	context text not null,
+	primary key (question_id),
+	foreign KEY (story_id) REFERENCES stories(story_id) 
+);
+
+create table answers(
+	answer_id int not null,
+    question_id int not null,
+    finance_impact int not null,
+    mental_impact int not null,
+    hunger_impact int not null,
+    context text not null,
+    primary key (answer_id),
+    foreign key (question_id) REFERENCES questions(question_id)
+);
